@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+}
+.body{filter: grayscale(44%);
+}
+
+
+.template{
+
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 100vw;
+justify-content: center;
+}
+
+
+
+.template .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    width: 100vw;
+    /* border: 2px solid; */
+position: fixed;
+top: 0;
+background-color: #0b8195;;
+z-index: 1;
+  }
+.template .navbar .navleft a{ padding: 12px;
+    color:black}
+.template .navbar .navright{}
+.template .navbar .navright ul{}
+.template .navbar .navright ul li {float: left;
+    padding: 43px;}
+.template .navbar .navright ul li a{color: black;}
+.template .navbar .navright ul li a:hover{background-color: rgb(173, 169, 169);}
+
+/* navbar css ends */
+.template .glassb{display: flex;
+background-image: url(architect.jpg);
+width: 100%;
+background-repeat: no-repeat;
+
+background-attachment: scroll;
+background-size: cover;
+height: 100vh;
+justify-content: center;
+align-items: center;}
+.template .glassb .ad{display: flex;
+justify-content: center;
+align-items: center;}
+.template .glassb .ad h1{color: white;
+    font-size: 2.2rem;
+    background-color: black;
+    padding: 9px;}
+.template .glassb .ad h2{color: white;
+    font-size: 2.0rem;
+    padding: 23px;}
+
+    /* projects section  */
+    .template .projects{display: flex;
+    flex-direction:column;
+width: 100%;}
+    .template .projects .heading{display:flex;
+        /* height: 23vh; */
+        width: 100%;
+        flex-direction: column;
+       
+        justify-content: center;
+      }
+        .template .projects .heading h1{padding: 6vh;}
+        .template .projects .heading hr{width: 95%;
+            margin-left: 2vw;}
+
+    .template .projects .houses{display: flex;
+        flex-direction: column;
+    }
+    .template .projects .houses .row1{display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 17px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+    .template .projects .houses .row1 .image img{
+        height: 30vh;
+        width: 45vh;
+       
+    
+      }
+      .template .projects .houses .row1 .image{ height: 30vh;
+        width: 45vh;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 2vh;
+   }
+      .template .projects .houses .row1 .image p{position: absolute;
+    top: 0;
+    color: white;
+    background-color: black;
+}
+
+    /* project section ends */
+
+
+    /* about section start */
+
+    .template .about {display: flex;
+    flex-direction: column;}
+
+
+     .template .about .projects .heading h1{margin-top: 13vh;}
+    .template .about .projects .heading p{padding: 3.5vh;} 
+
+
+    .template .about .persons{display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* padding-top: 15vh; */
+        flex-wrap: wrap;
+        margin-bottom: 2vh;
+    ;}
+    .template .about .persons .row1{  display: flex;
+        height: 68vh;
+        
+        width: 48vh;
+        flex-direction: column;
+        justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+
+      }
+    
+    .template .about .persons .row1 .image img{height: 33vh;
+        margin-bottom: 2vh;}
+    .template .about .persons .row1 .details button{width: 22vw;
+        height: 7vh;
+    border-radius: 0px;}
+    .template .about .persons .row1 .details button:hover{ background-color: rgb(184, 181, 181)}
+/* about section ends */
+
+
+
+/* form section starts */
+.template .form{display: flex;
+flex-direction: column;
+;}
+
+.template .form .projects .heading p{padding: 3.5vh;
+    margin-left: 2vw;}
+.template .form .contact{height: 62vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    }
+.template .form .contact input{  padding: 2vh;
+    width: 93%;
+    border-radius: 4px;
+  }
+.template .form  button{width: 12vw;
+    height: 7vh;
+    color: white;
+    background-color: black;
+    border-style: none;
+    margin-left: 4vw;
+    font-size: 17px;}
+    .template .form  button:hover{color: black;
+    background-color: rgb(184, 181, 181);}
+
+/* form section ends */
+
+/* map section */
+.template .map{display: flex;
+justify-content: center;
+padding: 4vh;
+width: 100%;}
+.template .map img{width: 98%;}
+/* map section */
+
+.template .footer{height: 14vh;
+    background-color: black;
+    width: 100%;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .template .footer a{color: white;
+        text-decoration: underline;
+        
+        }
+        .template .footer a:hover{transform: translateY(-91%);}
+
+
+        @media screen  and (max-width:500px){
+
+            .template .navbar .navright ul li{display: none;}
+            .template .projects .houses .row1{flex-direction: column;
+            justify-content: space-evenly;
+           
+        }
+           
+            .template .about .persons {flex-direction: column;
+                align-items: center;
+            }
+           
+            
+            .template .form button {width: 51vw;
+                height: 7vh;}
+                .template{justify-content: center;
+                }
+                .template .about .persons .row1 .image img{}
+                
+                .template .about .persons .row1 {flex-direction: row;}
+                .template .about .persons .row1 .details{font-size: 0.7rem;}
+                .template .about .persons .row1 .image img{width:92vw;}
+                .template .projects .houses .row1 .image img{width:92vw;}
+                .template .projects .houses{padding-left: 0px;}
+        }
